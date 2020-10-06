@@ -1,7 +1,6 @@
-var ppbutton = document.getElementById("vidbutton");
+let ppbutton = document.getElementById("vidbutton");
 ppbutton.addEventListener("click", playPause);
 myVideo = document.getElementsByClassName("myvid");
-console.log(myVideo);
 
 //script for autoplay the videos
 $("video[autoplay]").each(function () {
@@ -10,7 +9,7 @@ $("video[autoplay]").each(function () {
 });
 
 function playPause() {
-  for (var i = 0; i < myVideo.length; i++) {
+  for (let i = 0; i < myVideo.length; i++) {
     cur_video = myVideo[i];
     if (cur_video.paused) cur_video.play();
     else cur_video.pause();
@@ -22,14 +21,9 @@ $("#incident_btn").click(function () {
     url: "http://bimtestserver.com/digital_signage/incident.php",
     cache: false,
   }).done(function (incident_data) {
-    console.log(incident_data);
-
     incident_data = $.parseJSON(incident_data);
-
-    let incident_id = incident_data.IncidentMessage.MessageID;
+    //let incident_id = incident_data.IncidentMessage.MessageID;
     let incident_message = incident_data.IncidentMessage.Content;
-
-    //let incident_content = IncidentMessage.Content;
 
     window.setTimeout(function () {
       window.setTimeout(function () {
