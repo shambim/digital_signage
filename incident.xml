@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataroot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+<IncidentMessage>
+    <MessageID>IM2018070400001</MessageID>
+    <Content>Due to an accident, the south entrance of <br/>the car park is temporarily
+closed. Drivers are invited to use east entrance.</Content>
+</IncidentMessage>
+</dataroot>
