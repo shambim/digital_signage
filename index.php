@@ -25,7 +25,7 @@
             for($i=0;$i<3;$i++){ 
             ?>
             <div class="col mr-1 ml-1" style="border: 3px solid rgb(158, 144, 138);">
-                <video controls autoplay muted class="myvid" width="420">
+                <video controls autoplay muted class="myvid">
                     <source src="dubai-mall.mp4" type="video/mp4">
                     Your browser does not support HTML5 video.
                 </video>
